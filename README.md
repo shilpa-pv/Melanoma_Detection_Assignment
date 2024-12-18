@@ -26,9 +26,9 @@ The dataset consists of 2357 images of malignant and benign oncological diseases
 
 
 ## Conclusions
-- Model1 was trained on 20 epochs with batch_size as 32 and we saw the training accuracy is and validation accuracy is  . There is a clear overfitting observed.
-- Model2 was trained on 20 epochs with batch_size as 32 and an additionally used data Augumentation then the training accuracy is and validation accuracy is . There observed is underfitting.
-- Model3 was trained on 30 epochs with batch_size as 32 and used Augmentor library then the training accuracy is and validation accuracy is .
+- Model1 was trained on 20 epochs with batch_size as 32. This model is overfitting with training accuracy as 0.81 and validation accuracy as 0.43.While the training loss is clearly decreasing, but the validation loss is fluctuating a lot.
+- Model2 was trained on 20 epochs with batch_size as 32 and an additionally used data Augumentation. This model is underfitting with training accuracy as 0.53 and validation accuracy as 0.29. While the training loss is clearly decreasing, but the validation loss is fluctuating a lot.
+- Model3 was trained on 30 epochs with batch_size as 32 and used Augmentor library. After adding the additional images using Augmentor library, now we can get rid of underfitting/overfitting. The class rebalance helped in achieving this outcome. The training accuracy is 0.93 and validation accuracy is 0.86, with the consistent decrease in for both training and validation.
 
 ## Technologies Used
 - TensorFlow - version 2.18.0
